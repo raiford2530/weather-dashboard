@@ -105,4 +105,8 @@ $(document).ready(function(){
           getWeather(city);
 
       });
+
+      $(document).on('click', '.historyBtn', function(){
+          getWeather($(this).attr('data-city'));
+      })
 })
