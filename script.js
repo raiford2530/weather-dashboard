@@ -1,6 +1,7 @@
 $(document).ready(function(){
 
     var root = "https://api.openweathermap.org/data/2.5/";
+    const token = '6134970242bfd5a0d02311fb56d60846';
 
     var lastCitySearched = localStorage.getItem('lastCitySearched');
 
@@ -10,7 +11,7 @@ $(document).ready(function(){
 
     function getWeather(city) {
     
-        var urlcurrent = root + "/weather?q=" + city + "&units=imperial&appid=6134970242bfd5a0d02311fb56d60846";
+        var urlcurrent = root + "/weather?q=" + city + "&units=imperial&appid=" + token;
 
         $.ajax({
           url: urlcurrent,
@@ -38,7 +39,7 @@ $(document).ready(function(){
     }
 
     function getFiveDayForecast(lat, lon){
-      var url = root + "onecall?lat=" + lat + "&lon=" + lon + "&exclude=current,minutely,hourly,alerts&units=imperial&appid=6134970242bfd5a0d02311fb56d60846";
+      var url = root + "onecall?lat=" + lat + "&lon=" + lon + "&exclude=current,minutely,hourly,alerts&units=imperial&appid=" + token;
 
       $.ajax({
         url: url,
@@ -67,7 +68,7 @@ $(document).ready(function(){
     }
 
     function getUVIndex(lat, lon){
-        var url = root + "uvi?lat=" + lat + "&lon=" + lon + "&appid=6134970242bfd5a0d02311fb56d60846";
+        var url = root + "uvi?lat=" + lat + "&lon=" + lon + "&appid=" + token;
 
       $.ajax({
         url: url,
