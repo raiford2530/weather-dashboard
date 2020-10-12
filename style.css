@@ -2,6 +2,10 @@
   padding-left: 0;
 }
 
+.pad-right{
+    padding-right: 0;
+}
+
 form {
   min-width: 200px;
 }
@@ -20,4 +24,25 @@ form {
   background: #016fff;
   color: white;
   width: 40px;
+}
+
+.weather-details{
+    padding: 20px 20px;
+    margin-top: 15px;
+    border: 2px solid #dee2e6;
+    border-radius: 5px;
+}
+
+.five-day-label {
+    font-size: 20px;
+}
+
+@media screen and (max-width:768px){
+    .container-fluid {
+        padding-left: 15px;
+    }
+
+    .pad-right{
+        padding-right: 15px;
+    }
 }

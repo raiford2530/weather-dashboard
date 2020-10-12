@@ -19,7 +19,7 @@
     </header>
     <div class="container-fluid">
         <div class="row">
-            <div class="col-md-4 col-lg-3">
+            <div class="col-md-4 col-lg-3 pad-right">
                 <section class="search-area bg-light pl-2 pt-2 pb-3" id="searchContainer">
                     <div class="row mb-3">
                         <div class="col-md-10">
@@ -32,6 +32,25 @@
                                     </div>
                                 </div>
                             </form>
+                        </div>
+                    </div>
+                </section>
+            </div>
+            <div class="col-md-8 col-lg-9">
+                <section>
+                    <div class="weather-details mb-3">
+                        <h2 id="city"></h2>
+                        <p>Temperature: <span id="current-temp"></span></p>
+                        <p>Humidity: <span id="current-humidity"></span></p>
+                        <p>Wind Speed: <span id="current-wind-speed"></span></p>
+                        <p>UV Index: <span id="current-uv-index"></span></p>
+                    </div>
+                    <div class="five-day-container">
+                        <p class="five-day-label font-weight-bold">5-Day Forecast:</p>
+                        <div>
+                            <ul class="five-day-forecast">
+                               
+                            </ul>
                         </div>
                     </div>
                 </section>
