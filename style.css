@@ -61,6 +61,28 @@ form {
 
 .five-day-label {
     font-size: 20px;
+    margin-bottom: 5px;
+}
+
+.five-day-forecast{
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+.five-day-forecast li{
+    display: inline-block;
+    margin-right: 30px;
+    background: #016fff;
+    padding: 10px 40px 0px 10px;
+    border-radius: 5px;
+    color: white;
+}
+
+.five-day-weather-icon{
+    height: 50px;
+    margin-top: -10px;
 }
 
 @media screen and (max-width:768px){
@@ -70,5 +92,9 @@ form {
 
     .pad-right{
         padding-right: 15px;
+    }
+
+    .five-day-forecast li{
+        margin-bottom: 20px;
     }
 }
