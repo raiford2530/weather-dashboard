@@ -1,0 +1,23 @@
+.container-fluid {
+  padding-left: 0;
+}
+
+form {
+  min-width: 200px;
+}
+
+#searchInput {
+  display: inline-block;
+  width: 80%;
+}
+
+#searchInput,
+#searchBtn {
+  float: left;
+}
+
+#searchBtn {
+  background: #016fff;
+  color: white;
+  width: 40px;
+}
