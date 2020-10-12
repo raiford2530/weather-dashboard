@@ -22,6 +22,7 @@ $(document).ready(function(){
           $("#current-wind-speed").text(response.wind.speed + " MPH");
 
           getFiveDayForecast(response.coord.lat, response.coord.lon);
+          getUVIndex(response.coord.lat, response.coord.lon);
 
         });
     }
@@ -56,6 +57,33 @@ $(document).ready(function(){
 
           $(".five-day-forecast").append(forecastHTML);
         }
+      });
+    }
+
+    function getUVIndex(lat, lon){
+        var url = root + "uvi?lat=" + lat + "&lon=" + lon + "&appid=6134970242bfd5a0d02311fb56d60846";
+
+      $.ajax({
+        url: url,
+        method: "GET",
+      }).then(function (response) {
+        var uvIndex = response.value;
+        var indicatorColor;
+        $("#current-uv-index").text(uvIndex);
+
+        if (uvIndex >= 0 && uvIndex < 3) {
+          indicatorColor = "green";
+        } else if (uvIndex >= 3 && uvIndex < 6) {
+          indicatorColor = "yellow";
+        } else if (uvIndex >= 6 && uvIndex < 8) {
+          indicatorColor = "orange";
+        } else if (uvIndex >= 8 && uvIndex < 11) {
+          indicatorColor = "red";
+        } else {
+          indicatorColor = "violet";
+        }
+
+        $("#current-uv-index").css("background", indicatorColor);
       });
     }
 
