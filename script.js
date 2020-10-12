@@ -1,11 +1,17 @@
 $(document).ready(function(){
 
     var root = "https://api.openweathermap.org/data/2.5/";
-    
+
+    var lastCitySearched = localStorage.getItem('lastCitySearched');
+
+    if(lastCitySearched){
+        getWeather(lastCitySearched);
+    }
+
     function getWeather(city) {
     
         var urlcurrent = root + "/weather?q=" + city + "&units=imperial&appid=6134970242bfd5a0d02311fb56d60846";
-    
+
         $.ajax({
           url: urlcurrent,
           method: "GET",
@@ -103,6 +109,7 @@ $(document).ready(function(){
           $("#searchContainer").append(historyBtn);
 
           getWeather(city);
+          localStorage.setItem('lastCitySearched', city);
 
       });
 
