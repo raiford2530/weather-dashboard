@@ -49,6 +49,16 @@ form {
     border-radius: 5px;
 }
 
+#city {
+    font-size: 2rem;
+    font-weight: bold;
+}
+
+.weather-icon{
+    height: 65px;
+    margin-top: -10px;
+}
+
 .five-day-label {
     font-size: 20px;
 }
