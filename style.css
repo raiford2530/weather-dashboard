@@ -10,8 +10,16 @@ form {
   min-width: 200px;
 }
 
+.form-group{
+    margin-bottom: 0;
+}
+
+#error-text,
+#searchInput{
+    display: inline-block
+}
+
 #searchInput {
-  display: inline-block;
   width: 80%;
 }
 
@@ -24,6 +32,11 @@ form {
   background: #016fff;
   color: white;
   width: 40px;
+}
+
+#error-text{
+    color: red;
+    font-size: 14px;
 }
 
 .historyBtn{
@@ -42,6 +55,10 @@ form {
     border-style: none;
 }
 
+.historyBtn:hover{
+    background-color: #dee2e688;
+}
+
 .weather-details{
     padding: 20px 20px;
     margin-top: 15px;
@@ -54,9 +71,13 @@ form {
     font-weight: bold;
 }
 
+.weather-icon,
+.five-day-weather-icon{
+    margin-top: -10px;
+}
+
 .weather-icon{
     height: 65px;
-    margin-top: -10px;
 }
 
 #current-uv-index{
@@ -89,7 +110,6 @@ form {
 
 .five-day-weather-icon{
     height: 50px;
-    margin-top: -10px;
 }
 
 @media screen and (max-width:768px){

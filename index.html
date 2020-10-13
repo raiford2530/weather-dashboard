@@ -19,6 +19,7 @@
     </header>
     <div class="container-fluid">
         <div class="row">
+            <!-- Section for the search form and history buttons -->
             <div class="col-md-4 col-lg-3 pad-right">
                 <section class="search-area bg-light px-2 pt-2 pb-3" id="searchContainer">
                     <div class="row mb-3">
@@ -29,6 +30,8 @@
                                     <div class="clear-fix">
                                         <input type="text" class="form-control" id="searchInput">
                                         <button class="btn" id="searchBtn"><i class="fas fa-search"></i></button>
+                                        <!-- Placeholder for error message -->
+                                        <span id="error-text"></span>
                                     </div>
                                 </div>
                             </form>
@@ -36,6 +39,7 @@
                     </div>
                 </section>
             </div>
+            <!-- Section for the current weather and five day forecast -->
             <div class="col-md-8 col-lg-9">
                 <section>
                     <div class="weather-details mb-3">
