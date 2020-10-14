@@ -8,9 +8,9 @@ Demo the project by clicking [here](https://raiford2530.github.io/weather-dashbo
 
 ![Screenshot #2](/screenshot2.PNG)
 
-![Screenshot #3](/screenshot4.PNG)
+![Screenshot #3](/screenshot3.PNG)
 
-![Screenshot #4](/screenshot1.PNG)
+![Screenshot #4](/screenshot4.PNG)
 
 
 
