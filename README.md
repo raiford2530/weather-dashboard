@@ -13,7 +13,7 @@ Demo the project by clicking [here](https://raiford2530.github.io/weather-dashbo
 ![Screenshot #4](/screenshot4.PNG)
 
 
-
+If you would like to contact me send an email to rjraiford87@gmail.com
 ---------------------------------------------------------------------------------------------------------------------------------------------------------
 
 MIT License
