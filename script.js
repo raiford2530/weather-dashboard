@@ -13,12 +13,12 @@ $(document).ready(function () {
 
   //Function to get the current weather, five day forecast, and UV Index
   function getWeather(city, addHistory) {
-    const urlcurrent = root + "/weather?q=" + city + "&units=imperial&appid=" + token;
+    const urlcurrent = root + `/weather?q=${city}&units=imperial&appid=${token}`;
 
     $.ajax({
       url: urlcurrent,
       method: "GET",
-      error: function (jqXHR, errorText, errorThrown) {
+      error: (jqXHR, errorText, errorThrown) => {
         //If error is thrown from api call show in the error placeholder
         $('#error-text').text(jqXHR.responseJSON.message).show();
       },
